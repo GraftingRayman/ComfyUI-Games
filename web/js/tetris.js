@@ -328,6 +328,19 @@ class TetrisGame {
         });
         
         this.ctx.restore();
+        this.ctx.fillStyle = '#AAA';
+        this.ctx.font = '14px monospace';
+        this.ctx.textAlign = 'center';
+
+        const controlsY = this.canvas.height - 170;
+        const lineHeight = 20;
+
+        this.ctx.fillText('CONTROLS', this.canvas.width / 2, controlsY);
+        this.ctx.fillText('← / →    Move', this.canvas.width / 2, controlsY + lineHeight);
+        this.ctx.fillText('↑    Rotate', this.canvas.width / 2, controlsY + lineHeight * 2);
+        this.ctx.fillText('↓    Soft Drop', this.canvas.width / 2, controlsY + lineHeight * 3);
+        this.ctx.fillText('SPACE    Hard Drop', this.canvas.width / 2, controlsY + lineHeight * 4);
+        this.ctx.fillText('P    Pause', this.canvas.width / 2, controlsY + lineHeight * 5);
         
         // Draw start instruction
         this.ctx.fillStyle = '#0F0';
