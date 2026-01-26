@@ -3,19 +3,23 @@ from .tetris import TetrisNode
 from .tictactoe import TicTacToeNode
 from .checkers import CheckersNode
 from .snake import SnakeNode
+from .arkanoid import ArkanoidNode
 
 NODE_CLASS_MAPPINGS = {
     "TetrisNode": TetrisNode,
     "TicTacToeNode": TicTacToeNode,
     "CheckersNode": CheckersNode,
-    "SnakeNode": SnakeNode
+    "SnakeNode": SnakeNode,
+    "ArkanoidNode": ArkanoidNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "TetrisNode": "Tetris Game",
     "TicTacToeNode": "Tic Tac Toe Game",
     "CheckersNode": "Checkers Game",
-    "SnakeNode": "Snake Game"
+    "SnakeNode": "Snake Game",
+    "ArkanoidNode": "Arkanoid Game",
+
 }
 
 # The web directory is already defined in each game file
