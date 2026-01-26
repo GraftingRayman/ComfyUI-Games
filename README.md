@@ -5,3 +5,4 @@ Classic games for your ComfyUI while generating that next masterpiece
 # Tic Tac Toe
 # Checkers
 # Snake
+# Arkanoid
