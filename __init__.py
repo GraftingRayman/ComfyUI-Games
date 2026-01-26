@@ -1,19 +1,25 @@
-from .tetris import TetrisNode, WEB_DIRECTORY as TETRIS_WEB_DIR
-from .tictactoe import TicTacToeNode, WEB_DIRECTORY as TICTACTOE_WEB_DIR
+# __init__.py
+from .tetris import TetrisNode
+from .tictactoe import TicTacToeNode
+from .checkers import CheckersNode
+from .snake import SnakeNode
 
 NODE_CLASS_MAPPINGS = {
     "TetrisNode": TetrisNode,
-    "TicTacToeNode": TicTacToeNode
+    "TicTacToeNode": TicTacToeNode,
+    "CheckersNode": CheckersNode,
+    "SnakeNode": SnakeNode
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "TetrisNode": "Tetris Game",
-    "TicTacToeNode": "TicTacToeNode"
+    "TicTacToeNode": "Tic Tac Toe Game",
+    "CheckersNode": "Checkers Game",
+    "SnakeNode": "Snake Game"
 }
 
-# Combine web directories and routes
+# The web directory is already defined in each game file
 WEB_DIRECTORY = "./web"
-
 
 # Print load message for each node
 for node_name in NODE_CLASS_MAPPINGS.keys():
