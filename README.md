@@ -6,3 +6,4 @@ Classic games for your ComfyUI while generating that next masterpiece
 # Checkers
 # Snake
 # Arkanoid
+# PacMan
