@@ -4,6 +4,7 @@ from .tictactoe import TicTacToeNode
 from .checkers import CheckersNode
 from .snake import SnakeNode
 from .arkanoid import ArkanoidNode
+from .pacman import PacManNode
 
 NODE_CLASS_MAPPINGS = {
     "TetrisNode": TetrisNode,
@@ -11,6 +12,8 @@ NODE_CLASS_MAPPINGS = {
     "CheckersNode": CheckersNode,
     "SnakeNode": SnakeNode,
     "ArkanoidNode": ArkanoidNode,
+    "PacManNode": PacManNode,
+
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -19,6 +22,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "CheckersNode": "Checkers Game",
     "SnakeNode": "Snake Game",
     "ArkanoidNode": "Arkanoid Game",
+    "PacManNode": "Pac-Man Game",
 
 }
 
